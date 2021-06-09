@@ -73,7 +73,8 @@ namespace PBosted
 		xs2 = xs2 * (2. / M * F1 * pow(tan(halftheta), 2.0) + F2 / nu);
 		xs2 = xs2 * 389.379;
 
-		//std::cout<<" Theta="<<theta*57.3<<"  XS_in="<<xs1<<"  XS_qe="<<xs2<<std::endl; 
+		double deg = atan(1.0)/45.;
+		std::cout<<" Theta="<<theta/deg<<"  XS_in="<<xs1<<"  XS_qe="<<xs2<<std::endl; 
 		return (xs1 + xs2) / 1000.; // ub/MeV-sr
 	}
 

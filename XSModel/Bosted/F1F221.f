@@ -2135,7 +2135,7 @@ CCC
       f2mec = 2.*x*f1mec/(1.+4.*x*x*mp2/q2) 
       f2 = f2 + f2qe + f2mec
       fL = (1.+4.*x*x*mp2/q2)*f2-2.0*x*f1
-      if(F1.LE.0.0) write(6,*) "F1 < 0"
+!      if(F1.LE.0.0) write(6,*) "warning: F1 < 0, set it to 0"
       if(F1.LE.0.0) F1=0.0
       if(F2.LE.0.0) F2=0.0
       if(FL.LE.0.0) FL=0.0
